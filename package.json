@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "argon2": "^0.30.3"
+  },
+  "name": "argon2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
