@@ -1,12 +1,14 @@
-FROM node:14
+FROM node:18.16.0-alpine
 
-WORKDIR /app
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-COPY package*.json ./
-
+# Install app dependencies
+COPY package.json /usr/src/app/
 RUN npm install
 
-COPY . .
+# Bundle app source
+COPY . /usr/src/app
 
 EXPOSE 3000
 
